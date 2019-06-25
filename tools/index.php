@@ -21,7 +21,6 @@
   </p>
   <p class="panel-tabs">
     <a href="/" class="is-active">home</a>
-    <a href="about.php">about</a>
     <a href="https://github.com/ibnusyawall">forks</a>
   </p>
   <a href="/" class="panel-block is-active">
