@@ -1,6 +1,5 @@
 <?php
-  $home  = 'Wellcome to ? apa hayo';
-  $judul = 'TES2TOOLS';
+  $judul = 'WhyToGetMe';
   $a = $judul. ' | Git Information';
   $b = $judul. ' | Md5 Encrypt';
   $c = $judul. ' | Base64 Encode';

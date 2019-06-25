@@ -1,10 +1,10 @@
-<?php include '../config/repo.php'; include '../config/title.php'; ?>
+<?php include 'config/bs64enc.php'; include 'config/title.php'; ?>
 
 <html>
 <head>
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
- <title><?php echo $a; ?></title>
+ <title><?php echo $c; ?></title>
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
 </head>
 <body>
@@ -16,7 +16,6 @@
   </p>
   <p class="panel-tabs">
     <a href="/" class="is-active">home</a>
-    <a href="about.php">about</a>
     <a href="https://github.com/ibnusyawall">forks</a>
   </p>
   <a href="/" class="panel-block">
@@ -25,7 +24,7 @@
     </span>
     home
   </a>
-  <a href="repo.php" class="panel-block is-active">
+  <a href="repo.php" class="panel-block">
     <span class="panel-icon">
       <i class="fas fa-book" aria-hidden="true"></i>
     </span>
@@ -37,7 +36,7 @@
     </span>
     md5enc.php
   </a>
-  <a href="base64enc.php" class="panel-block">
+  <a href="base64enc.php" class="panel-block is-active">
     <span class="panel-icon">
       <i class="fas fa-book" aria-hidden="true"></i>
     </span>
@@ -69,10 +68,11 @@
   </a>
 </nav>
 
+
 <form action="#" method="post" autocomplete="off">
 <div class="field is-grouped">
   <p class="control is-expanded">
-    <input name="data" autocomplete="off" class="input is-info" type="text" placeholder="username, ex : ibnusyawall">
+    <input name="data" autocomplete="off" class="input is-info" type="text" placeholder="">
   </p>
 </div>
 <p class="control">
@@ -102,10 +102,9 @@
 <div class="control is-expanded">
   <?php
 
-   $dec = json_decode($ambil, TRUE);
-   echo "<pre><code>";
-   print_r($dec);
-   echo "</code></pre>";
+   echo "<pre>";
+   print_r('input : '. $ambil. '   |   '. 'output : '. '<code>'.  $hasil. '</code>');
+   echo "</pre>";
 
   ?>
 </div>

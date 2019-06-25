@@ -4,48 +4,77 @@
 <head>
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
- <title><?php echo $home; ?></title>
+ <title><?php echo $judul; ?></title>
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
 </head>
 <body>
 <div class="container is-fluid">
 
-
-<section class="hero is-success is-fullheight">
-
-<div class="hero-head">
- <header class="navbar">
-  <div class="container">
-  </div>
- </header>
+<div class="notification is-primary">
+  <button class="delete"></button>
+  Selamat datang di <?php echo $judul; ?> , selamat menikmati tools sederhana ini yah
 </div>
 
-<div class="hero-body">
-  <div class="container has-text-centered">
-    <h1 class="title">
-        Ibnu Syawal As-Salim
-    </h1>
-    <h2 class="subtitle">
-        407 Authentic Exploit
-    </h2>
-  </div>
-</div>
-
-<div class="hero-foot">
-  <nav class="tabs is-boxed is-fullwidth">
-    <div class="container">
-      <ul>
-        <li class="is-active"><a href="/" >Home</a></li>
-        <li><a href="tools/">mini tools online</a></li>
-      </ul>
-    </div>
-  </nav>
-</div>
-
-</section>
-
+<nav class="panel">
+  <p href="/" class="panel-heading">
+    <?php echo $judul; ?>
+  </p>
+  <p class="panel-tabs">
+    <a href="/" class="is-active">home</a>
+    <a href="https://github.com/ibnusyawall">forks</a>
+  </p>
+  <a href="/" class="panel-block is-active">
+    <span class="panel-icon">
+      <i class="fas fa-book" aria-hidden="true"></i>
+    </span>
+    home
+  </a>
+  <a href="repo.php" class="panel-block">
+    <span class="panel-icon">
+      <i class="fas fa-book" aria-hidden="true"></i>
+    </span>
+    repo.php
+  </a>
+  <a href="md5enc.php" class="panel-block">
+    <span class="panel-icon">
+      <i class="fas fa-book" aria-hidden="true"></i>
+    </span>
+    md5enc.php
+  </a>
+  <a href="base64enc.php" class="panel-block">
+    <span class="panel-icon">
+      <i class="fas fa-book" aria-hidden="true"></i>
+    </span>
+    base64enc.php
+  </a>
+  <a href="base64dec.php" class="panel-block">
+    <span class="panel-icon">
+      <i class="fas fa-book" aria-hidden="true"></i>
+    </span>
+    base64dec.php
+  </a>
+  <a href="urlenc.php" class="panel-block">
+    <span class="panel-icon">
+      <i class="fas fa-book" aria-hidden="true"></i>
+    </span>
+    urlenc.php
+  </a>
+  <a href="urldec.php" class="panel-block">
+    <span class="panel-icon">
+      <i class="fas fa-book" aria-hidden="true"></i>
+    </span>
+    urldec.php
+  </a>
+  <a href="htmlspecial.php" class="panel-block">
+    <span class="panel-icon">
+      <i class="fas fa-book" aria-hidden="true"></i>
+    </span>
+    htmlspecial.php
+  </a>
+</nav>
 
 </div>
 <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+<script src="style/myjs.js"></script>
 </body>
 </html>

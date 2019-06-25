@@ -1,10 +1,10 @@
-<?php include '../config/md5enc.php'; include '../config/title.php'; ?>
+<?php include 'config/urlenc.php'; include 'config/title.php'; ?>
 
 <html>
 <head>
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
- <title><?php echo $b; ?></title>
+ <title><?php echo $e; ?></title>
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
 </head>
 <body>
@@ -16,7 +16,6 @@
   </p>
   <p class="panel-tabs">
     <a href="/" class="is-active">home</a>
-    <a href="about.php">about</a>
     <a href="https://github.com/ibnusyawall">forks</a>
   </p>
   <a href="/" class="panel-block">
@@ -31,7 +30,7 @@
     </span>
     repo.php
   </a>
-  <a href="md5enc.php" class="panel-block is-active">
+  <a href="md5enc.php" class="panel-block">
     <span class="panel-icon">
       <i class="fas fa-book" aria-hidden="true"></i>
     </span>
@@ -49,7 +48,7 @@
     </span>
     base64dec.php
   </a>
-  <a href="urlenc.php" class="panel-block">
+  <a href="urlenc.php" class="panel-block is-active">
     <span class="panel-icon">
       <i class="fas fa-book" aria-hidden="true"></i>
     </span>
