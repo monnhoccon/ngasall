@@ -95,6 +95,12 @@
     </span>
     <span>ibnusyawall</span>
   </a>
+  <a href="https://github.com/Aditya021" class="button">
+    <span class="icon">
+      <i class="fab fa-github"></i>
+    </span>
+    <span>Raditya Chandra</span>
+  </a>
 </div>
 </form>
 
